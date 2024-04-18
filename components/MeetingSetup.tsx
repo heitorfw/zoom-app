@@ -17,7 +17,7 @@ const MeetingSetup = ({
 
     const call = useCall();
     if(!call) {
-        throw new Error('usecall must be use within  streamcall component')
+        throw new Error("usecall must be use within  streamcall component")
     }
     useEffect(() => {
         if(isMicCamToggledOn){
@@ -31,19 +31,19 @@ const MeetingSetup = ({
     }, [isMicCamToggledOn, call.camera, call.microphone])
 
   return (
-    <div className='flex h-screen w-full flex-col items-center justify-center
-    gap-3 text-white'>
-        <h1 className='text-2xl font-bold'>Setup</h1>
+    <div className="flex h-screen w-full flex-col items-center justify-center
+    gap-3 text-white">
+        <h1 className="text-2xl font-bold">Setup</h1>
         <VideoPreview/>
-        <div className='flex h-16 items-center justify-center gap-3'>
-            <label className='flex items-center justify-center gap-2 font-medium'>
-                <input type='checkbox'  checked={isMicCamToggledOn} onChange={(e) => 
+        <div className="flex h-16 items-center justify-center gap-3">
+            <label className="flex items-center justify-center gap-2 font-medium">
+                <input type="checkbox"  checked={isMicCamToggledOn} onChange={(e) => 
                     setIsMicCamToggledOn(e.target.checked)}/>
-                    'Join with mic and camera off'
+                    Join with mic and camera off
             </label>
             <DeviceSettings/>
         </div>
-        <Button className='rounded-md bg-green-500 px-4 py-2.5' onClick={() => {
+        <Button className="rounded-md bg-green-500 px-4 py-2.5" onClick={() => {
             call.join();
             setIsSetupComplete(true);
         }}>
