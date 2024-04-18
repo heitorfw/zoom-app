@@ -3,7 +3,6 @@
 import { useCall, useCallStateHooks } from '@stream-io/video-react-sdk';
 import React from 'react'
 import { Button } from './ui/button';
-import { useRouteError } from 'react-router-dom';
 import { useRouter } from 'next/navigation';
 
 const EndCallButton = () => {
