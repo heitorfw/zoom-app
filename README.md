@@ -1,1 +1,1 @@
-aplicativo de video conferencia utilizando next js, tailwind css, stream e o clerk para autenticação link: https://zoom-app-xi.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-app-xi.vercel.app%2F
+aplicativo de video conferencia para fazer uma call, com amigos, agendar uma call, começar instantanemente ou convidar pessoas para uma call utilizando next js, tailwind css, stream e o clerk para autenticação link: https://zoom-app-xi.vercel.app/sign-in?redirect_url=https%3A%2F%2Fzoom-app-xi.vercel.app%2F
